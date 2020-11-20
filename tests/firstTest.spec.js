@@ -17,7 +17,7 @@ describe('First test', () => {
     });
 
     it("Mocked OK Response", (done) => {
-        request_('https://run.mocky.io')
-        .get('/v3/122c77d4-c35b-4d68-89f5-1c254f4928ff').expect(200, done)
+        request_('https://run.mocky.io/v3/122c77d4-c35b-4d68-89f5-1c254f4928ff')
+        .get('').expect(200, done)
     });
 });
