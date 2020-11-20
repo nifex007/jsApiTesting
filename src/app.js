@@ -29,10 +29,7 @@ app.post('/course', (req, res) => {
     res.json({ id: '2', name: name });
 });
 
-app.post('/course', (req, res) => {
-    let name = req.body.name;
-    res.json({ id: '2', name: name });
-});
+
 
 
 module.exports = app;
