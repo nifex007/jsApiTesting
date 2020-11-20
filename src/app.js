@@ -1,6 +1,7 @@
 const express = require('express');
 
 const app = express();
+const port = 3001;
 
 app.use(express.json()) // for parsing application/json
 app.use(express.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
@@ -31,6 +32,11 @@ app.post('/course', (req, res) => {
 app.post('/course', (req, res) => {
     let name = req.body.name;
     res.json({ id: '2', name: name });
+});
+
+
+app.listen(port, () => {
+    console.log(`App running @  http://localhost:${port}`)
 });
 
 module.exports = app;
