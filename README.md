@@ -7,3 +7,5 @@
 ```cd jsApiTesting && npm install ```
 
 ```npm test```
+
+![alt text](./img.png)
