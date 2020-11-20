@@ -8,4 +8,5 @@
 
 ```npm test```
 
-![alt text](./img.png)
+
+<img src="./img.png" width="300" height="300">
